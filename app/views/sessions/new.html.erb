@@ -1,0 +1,11 @@
+<h1> Inicia sesión </h1>
+
+<%= form_for(:session, url: '/ingresa') do |f| %>
+   </br>
+  <%= f.email_field :email, :placeholder => "email" %>
+  </br>
+  <%= f.password_field :password, :placeholder => "contraseña" %>
+  </br>
+  <%= f.submit "Ingresar", class: "btn-submit" %>
+  </br>
+<% end %>
